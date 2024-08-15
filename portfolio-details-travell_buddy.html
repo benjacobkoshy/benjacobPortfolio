@@ -5,11 +5,10 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - iPortfolio Bootstrap Template</title>
+  <title>Portfolio - Ben Jacob Koshy</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
@@ -23,17 +22,34 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Updated: Mar 17 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
+  <style>
+    .portfolio-details-slider {
+        width: 100%; /* Make the slider full width */
+        max-width: 100%; /* Ensure it doesn't exceed the container width */
+    }
+
+    .portfolio-details-slider .swiper-slide img {
+        width: 100%; /* Image fills the slide width */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Ensures image covers the slide area */
+        border-radius: 10px; /* Optional: rounded corners */
+    }
+
+    /* Additional media queries for extra control */
+    @media (max-width: 768px) {
+        .portfolio-details-slider .swiper-slide img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -47,24 +63,23 @@
 
       <div class="profile">
         <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Alex Smith</a></h1>
+        <h1 class="text-light"><a href="index.html">Ben Jacob Koshy</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://twitter.com/koshy_ben19956" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="http://www.facebook.com/ben.jacob.986227" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/ben_jacob_koshy/" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://github.com/benjacobkoshy" class="google-plus"><i class="fa-brands fa-square-github"></i></a>
+          <a href="https://www.linkedin.com/in/ben-jacob-koshy-b1a87b227/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
       </div>
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+          <li><a href="main.html" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="main.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="main.html#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="main.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="main.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
@@ -77,9 +92,9 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Portfoio Details</h2>
+          <h2><strong>Portfoio Details </strong></h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="main.html">Home</a></li>
             <li>Portfoio Details</li>
           </ol>
         </div>
@@ -133,7 +148,7 @@
                 <li><strong>Category</strong>: Python Django</li>
                 <li><strong>Event</strong>: Mini Project</li>
                 <li><strong>Date</strong>: 28 February, 2024</li>
-                <li><strong>Project URL</strong>: <a href="">travell_buddy</li>
+                <li><strong>Repository URL</strong>: <a href="https://github.com/benjacobkoshy/travelBuddy">travell_buddy</li>
               </ul>
             </div>
             <div class="portfolio-description">
@@ -154,20 +169,42 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>iPortfolio</span></strong>
-      </div>
+      <!-- <div class="copyright">
+        &copy; Copyright <strong><span></span></strong>
+      </div> -->
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+
+        Designed by <a href="https://www.linkedin.com/in/ben-jacob-koshy-b1a87b227/">Ben Jacob Koshy</a>
       </div>
     </div>
   </footer><!-- End  Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+  <script>
+    var swiper = new Swiper('.portfolio-details-slider', {
+    spaceBetween: 10,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        1440: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        },
+    },
+});
+  </script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
